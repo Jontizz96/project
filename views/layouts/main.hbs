@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jonatan's website</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="/layout.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns">
+        <div class="column col-12">
+          <header class="navbar">
+            <section class="navbar-section">
+              <a href="/login" class="btn btn-link">Login</a>
+              <a href="/humans" class="btn btn-link">Humans</a>
+              </section>
+              <h1 id="header">My website</h1>
+              <section class="navbar-section">
+                <div class="input-group input-inline">
+                  <input class="form-input" type="text" placeholder="write something...">
+                  <button class="btn btn-primary input-group-btn">Search</button>
+                  <form action ="https://www.google.se/" method="GET"></form>
+                </div>
+              </section>
+            </header>
+        </div>
+        <div id"menu" class="column col-3">
+          <ul id= "u1" class="nav">
+            <li id="li"class="nav-item">
+              <a id="a"href="/">Home</a>
+            </li>
+            <li id="li" class="nav-item">
+              <a id="a"href="/about">About</a>
+            </li>
+            <li id="li"class="nav-item">
+                <a id="a"href="/contact">Contact</a>
+            </li>
+          </u1>
+        </div>
+        <div id="main" class="column col-9">
+          {{{body}}}
+        </div>
+        <div id"footer"class="column col-12">
+          <p>This is the footer</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
